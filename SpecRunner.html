@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.3.2</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine/jasmine.css">
+
+  <script src="lib/require/require.js"></script>
+  <script src="lib/require/main.js"></script>
+
+  <script type="text/javascript">
+    var specs = [
+    ];
+
+    for(var i=0; i<specs.length;i++) {
+      specs[i] = '../spec/' + specs[i] + 'Spec';
+    }
+  </script>
+
+  <script type="text/javascript">
+
+
+    require(['jasmine-boot'], function(){
+      require(specs,
+        function(){
+            window.onload();
+        });
+    });
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

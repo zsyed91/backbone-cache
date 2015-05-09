@@ -1,0 +1,29 @@
+{
+    "name": "backbone-cache",
+    "description": "Cache management for backbone apps",
+    "version": "0.1.0",
+    "keywords": [
+        "backbone", "underscore", "backbone-cache"
+    ],
+    "homepage": "http://github.com/zsyed91/backbone-cache",
+    "author": {
+        "name": "Zshawn Syed",
+        "email": "zsyed91@gmail.com",
+        "url": "zshawnsyed.com"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zsyed91/backbone-cache.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-jasmine": "~0.7.0",
+        "grunt-template-jasmine-requirejs": "*"
+    }
+
+}
