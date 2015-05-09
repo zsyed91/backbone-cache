@@ -30,7 +30,7 @@ var options = {
 
 ```
 
-#### eventHandler
+#### eventHandler - optional
 
 This is for listening for event triggers. If you use a custom event object by extending `Backbone.Events` you can pass in a reference to it here. Otherwise it will default to using `Backbone.Events` as the event handler.
 
@@ -66,9 +66,11 @@ App.cache.createCache("namespace");
 // Approach 2
 var view = new ToDoView();
 
-view.trigger('cache.createCache', 'ToDoCache');
-// window.cache['ToDoCache'] will now exist
-
+//  In the constructor
+initalize: function(options) {
+    App.events.trigger('cache.createCache', 'ToDoCache');
+    // window.cache['ToDoCache'] will now exist
+}
 ```
 
 
